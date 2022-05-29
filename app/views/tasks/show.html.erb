@@ -1,0 +1,27 @@
+
+<div class ="card">
+  <div class ="card-body">
+    <p>
+  <b>Title:</b>
+  <%= @task.title %>
+  </p>
+
+  <p>
+  <b>Description:</b>
+  <%= @task.description %>
+  </p>
+
+  <p>
+  <b>Status:</b>
+  <%= @task.status %>
+  </p>
+
+  <%= link_to 'Edit', edit_project_task_path(@task.project, @task) %> |
+  <%= link_to 'Back', project_tasks_path(@task.project) %>
+
+  
+  
+  </div>
+
+
+</div>
